@@ -15,6 +15,12 @@ def read_names():
     res.sort()
     return res
 
+def clear_text(text):
+    return text
+
+def find_word(word):
+    return
+
 def main():
     names = read_names()
     result = u''
