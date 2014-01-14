@@ -16,6 +16,9 @@ def read_names():
     return res
 
 def clear_text(text):
+    for word in text:
+        if wore in arr_words:
+            #delete word
     return text
 
 def find_word(word):
@@ -26,12 +29,6 @@ def main():
     result = u''
     text = u'Илья Валентинович Сегалович — российский программист и общественный деятель, один из основателей (вместе со своим другом и одноклассником Аркадием Воложем) компании «Яндекс», ныне технический директор компании. Компания «Яндекс» — лидер на рынке поиска в России.'
     text = text.split()
-    for word in text:
-        print word
-        if word not in names:
-            result += word + ' '
-        print result
-        exit()
     print result
 
 if __name__ == "__main__":
